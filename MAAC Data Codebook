@@ -1,0 +1,24 @@
+id: Integer columns representing a participant's ID.
+survey_start: Date/time column representing the date and time of the start of a survey (yyyy-mm-dd HH:MM:SS). 
+survey_submit: Date/time column representing the date and time of the submission of a survey (yyyy-mm-dd HH:MM:SS). 
+trigger: Date/time column representing the date and time of the trigger of a survey (yyyy-mm-dd HH:MM:SS).
+session: Integer column representing the index of a participant's New Use session. 
+baseline_date: Integer column representing the start date of the 21-day EMA period.
+day: Integer column representing the nth day of the 21-day EMA period. 
+time_since_minutes: Integer column representing the time since the last survey in a session, if a New Use survey, time since is zero. 
+initial_follow_up: Integer column representing the number of initial Follow Up surveys completed within the first 175 minutes since the submission of the New Use survey (0, 1, 2). 
+>_2_int: Boolean column representing whether the first two initial surveys were completed (0, 1). 
+extended_fu: Boolean column representing whether the session required extended Follow Up surveys (0, 1). 
+met_stop_rule: Boolean column representing whether two consecutive Follow Up surveys without any alcohol or cannabis use were reported.
+one_met_stop_rule: Integer column representing the number of use-free Follow Up surveys were reported. 
+total_fu_num: Integer column representing the number of Follow Up surveys completed within a session. 
+total_fu_needed: Integer column representing the number of Follow Up surveys needed for the session.
+total_fu_prop: Float column representing the proportion of Follow Up surveys completed and the total number of Follow Up surveys needed.
+num_ex_fu_completed: Integer column representing the number of extended Follow Up surveys completed in an extended Follow Up session.
+ex_fu_prop: Float column representing the proportion of extended Follow Up surveys completed and the total number of extended Follow Up needed. 
+init_fu_prop: Float column representing the participant's average proportion of completed initial Follow Up surveys. 
+avg_total_fu: Float column representing the total participant proportion of total Follow Up surveys completed and the total Follow Up surveys needed.
+total_fu_prop_part: Float column representing a participant's average total Follow Up survey. 
+ex_fu_avg: Float column representing a participant's average number of extended Follow Up surveys completed. 
+ex_fu_prop_part: Float column representing a participant's average proportion of extended Follow Up surveys completed.
+session_rogue: Integer column representing the index of a participant's New Use session accounting for extended inactivity.
